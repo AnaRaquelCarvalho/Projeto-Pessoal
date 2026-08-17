@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carvalho Systems | Home</title>
+    
+    <!-- Bibliotecas e Fontes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Fira+Code&display=swap" rel="stylesheet">
+    
+    <!-- Link para o CSS Externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="antialiased selection:bg-teal-500/30">
+
+    <div class="max-w-6xl mx-auto px-6 py-20 lg:py-32">
+        
+        <header class="mb-32 space-y-10">
+            <!-- Badge de Status -->
+            <div>
+                <div class="status-pill-instagram cursor-default">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
+                    </span>
+                    Disponível para Projetos
+                </div>
+            </div>
+            
+            <!-- Nome e Cargo Interativos (Como você pediu) -->
+            <div class="space-y-6">
+                <a href="#" class="interactive-name-link block">
+                    <h1 id="hero-name" class="text-7xl font-black tracking-tighter sm:text-9xl leading-[0.85] uppercase">
+                        Carvalho <span class="highlight">Systems.</span>
+                    </h1>
+                </a>
+                
+                <a href="#" class="interactive-name-link block">
+                    <h2 class="text-2xl md:text-3xl font-bold tracking-tight uppercase">
+                        Apps - Páginas Web - <span class="highlight">Automações</span>
+                    </h2>
+                </a>
+                
+                <p id="terminal" class="text-sm font-mono text-teal-500/50 italic min-h-[40px]"></p>
+            </div>
+
+            <!-- Navegação Unificada (Mantidos Originais) -->
+            <nav class="flex flex-wrap gap-4">
+                <a href="index.html" class="nav-pill-original active"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="projetos.html" class="nav-pill-original"><i class="fa-solid fa-code"></i> Projetos</a>
+                <a href="sobre.html" class="nav-pill-original"><i class="fa-solid fa-bolt"></i> Sobre</a>
+                <a href="servicos.html" class="nav-pill-original"><i class="fa-solid fa-gears"></i> Serviços</a>
+                <a href="contato.html" class="nav-pill-original"><i class="fa-solid fa-paper-plane"></i> Contato</a>
+            </nav>
+
+            <!-- Redes Sociais com YouTube -->
+            <div class="flex items-center gap-6 pt-4">
+                <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-github text-2xl"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-instagram text-2xl"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-youtube text-2xl"></i></a>
+            </div>
+        </header>
+
+        <!-- Bento Grid Home -->
+        <main id="projetos" class="bento-grid">
+            <div class="bento-card md:col-span-2 group">
+                <div class="spotlight"></div>
+                <div class="layer-content">
+                    <span class="text-[11px] font-mono font-bold text-teal-400 uppercase tracking-widest italic">// Destaque</span>
+                    <h3 class="text-5xl font-black text-white mt-6 uppercase leading-none">Nexus Engine AI</h3>
+                </div>
+            </div>
+            <div class="bento-card group">
+                <div class="spotlight"></div>
+                <h3 class="text-2xl font-bold text-white uppercase">Cloud Ops</h3>
+            </div>
+            <div class="bento-card group">
+                <div class="spotlight"></div>
+                <h3 class="text-2xl font-bold text-white uppercase">Visual Lab</h3>
+            </div>
+        </main>
+    </div>
+
+    <!-- Link para o JS Externo -->
+    <script src="js/script.js"></script>
+</body>
+</html>
