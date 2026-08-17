@@ -7,64 +7,81 @@
     
     <!-- Bibliotecas e Fontes -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Fira+Code&display=swap" rel="stylesheet">
     
     <!-- Link para o CSS Externo -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="antialiased selection:bg-teal-500/30">
+<body class="antialiased selection:bg-teal-500/30 overflow-x-hidden">
 
-    <div class="max-w-6xl mx-auto px-6 py-20 lg:py-32">
+    <!-- Container Principal (Padding reduzido para compactar) -->
+    <div class="max-w-7xl mx-auto px-6 py-8 lg:py-12">
         
-        <header class="mb-32 space-y-10">
-            <!-- Badge de Status -->
-            <div>
-                <div class="status-pill-instagram cursor-default">
-                    <span class="relative flex h-2 w-2">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
-                    </span>
-                    Disponível para Projetos
-                </div>
-            </div>
+        <header class="mb-16 space-y-10">
             
-            <!-- Nome e Cargo Interativos (Como você pediu) -->
-            <div class="space-y-6">
-                <a href="#" class="interactive-name-link block">
-                    <h1 id="hero-name" class="text-7xl font-black tracking-tighter sm:text-9xl leading-[0.85] uppercase">
-                        Carvalho <span class="highlight">Systems.</span>
-                    </h1>
-                </a>
-                
-                <a href="#" class="interactive-name-link block">
-                    <h2 class="text-2xl md:text-3xl font-bold tracking-tight uppercase">
-                        Apps - Páginas Web - <span class="highlight">Automações</span>
-                    </h2>
-                </a>
-                
-                <p id="terminal" class="text-sm font-mono text-teal-500/50 italic min-h-[40px]"></p>
+            <!-- 1. NAVEGAÇÃO CENTRALIZADA (Topo) -->
+            <div class="flex justify-center w-full">
+                <nav class="flex flex-wrap gap-x-3 gap-y-1.5 justify-center bg-white/3 py-1.5 px-4 rounded-full border border-white/5 backdrop-blur-sm">
+                    <a href=" index.html" class="nav-pill-original active interactive-name-link block"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="projetos.html" class="nav-pill-original active interactive-name-link block"><i class="fa-solid fa-code"></i> Projetos</a>
+                    <a href="sobre.html" class="nav-pill-original active interactive-name-link block"><i class="fa-solid fa-bolt"></i> Sobre</a>
+                    <a href="servicos.html" class="nav-pill-original active interactive-name-link block"><i class="fa-solid fa-gears"></i> Serviços</a>
+                    <a href="contato.html" class="nav-pill-original active interactive-name-link block"><i class="fa-solid fa-paper-plane"></i> Contato</a>
+                </nav>
             </div>
 
-            <!-- Navegação Unificada (Mantidos Originais) -->
-            <nav class="flex flex-wrap gap-4">
-                <a href="index.html" class="nav-pill-original active"><i class="fa-solid fa-house"></i> Home</a>
-                <a href="projetos.html" class="nav-pill-original"><i class="fa-solid fa-code"></i> Projetos</a>
-                <a href="sobre.html" class="nav-pill-original"><i class="fa-solid fa-bolt"></i> Sobre</a>
-                <a href="servicos.html" class="nav-pill-original"><i class="fa-solid fa-gears"></i> Serviços</a>
-                <a href="contato.html" class="nav-pill-original"><i class="fa-solid fa-paper-plane"></i> Contato</a>
-            </nav>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 pt-4">
+                
+                <!-- PARTE ESQUERDA: A LOGO -->
+                <div class="flex-shrink-0">
+                    <img 
+                        src="images/CarvalhoSystems.png" 
+                        alt="Carvalho Systems Logo"
+                        class="w-50 md:w-56 h-auto block" 
+                    >
+                </div>
 
-            <!-- Redes Sociais com YouTube -->
-            <div class="flex items-center gap-6 pt-4">
-                <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-github text-2xl"></i></a>
-                <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-instagram text-2xl"></i></a>
-                <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin text-2xl"></i></a>
-                <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-youtube text-2xl"></i></a>
-            </div>
-        </header>
+                <!-- PARTE DIREITA: NOME E INTERATIVIDADE (Letras menores e espaço reduzido) -->
+                <div class="flex-grow md:text-left space-y-4">
+                    
+                    <div class="flex justify-center w-full"></div>          
+                    <br>                    
+                    <!-- Nome e Cargo Interativos (Unidade Alinhada à direita, fontes menores) -->
+                    <div class="space-y-2">
+                        <a href="index.html" class="interactive-name-link block">
+                            <h1 id="hero-name" class="text-4xl font-black tracking-tighter sm:text-6xl lg:text-7xl leading-[0.85] uppercase whitespace-nowrap">
+                                Carvalho <span class="highlight">Systems.</span>
+                            </h1>
+                        </a>
 
-        <!-- Bento Grid Home -->
+                        <a href="#" class="interactive-name-link block">
+                            <h2 class="text-2xl md:text-3xl font-bold tracking-tight uppercase"> Apps <h2 class="text-2xl md:text-3xl font-bold tracking-tight uppercase"></h2> - Páginas Web - <h2 class="text-lg md:text-xl font-bold tracking-tight uppercase text-white/ active interactive-name-link"> Automações </h2>
+                        </a>
+                        
+                        <!-- Terminal (Altura mínima reduzida min-h-[16px]) -->
+                        <p id="terminal" class="text-xs font-mono text-teal-500/50 italic min-h-[16px] md:text-right"></p>
+                    </div>
+
+                    <div class="status-pill-instagram cursor-default">
+                            <span class="relative flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
+                            </span>
+                            Disponível
+                        </div>
+                    <!-- Redes Sociais com YouTube -->
+                    <div class="flex items-center gap-6 pt-4">
+                        <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-github text-2xl"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-instagram text-2xl"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+                        <a href="#" target="_blank" class="social-icon"><i class="fa-brands fa-youtube text-2xl"></i></a>
+                    </div>
+                </header>        
+
+                
+
+        <!-- BENTO GRID HOME (Conteúdo Principal Mantido) -->
         <main id="projetos" class="bento-grid">
             <div class="bento-card md:col-span-2 group">
                 <div class="spotlight"></div>
@@ -84,7 +101,7 @@
         </main>
     </div>
 
-    <!-- Link para o JS Externo -->
+    <!-- Link para o JS Externo (Essencial para os efeitos) -->
     <script src="js/script.js"></script>
 </body>
 </html>
